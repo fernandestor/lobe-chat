@@ -1,0 +1,65 @@
+{
+	"folders": [
+		{
+			"name": "lobe-chat @ 613a557",
+			"uri": "gitlens://7b22726566223a2236313361353537333936393133326635656531353632356335393561613733623332383834346637222c227265706f50617468223a222f55736572732f79726f636861656c2f446f63756d656e74732f4769744875622f79616e726f636861656c2f6c6f62652d63686174227d/Users/yrochael/Documents/GitHub/yanrochael/lobe-chat?{\"ref\":\"613a557\"}"
+		}
+	],
+	"launch": {
+		"configurations": [
+			{
+				"type": "pwa-msedge",
+				"name": "Launch Microsoft Edge",
+				"request": "launch",
+				"runtimeArgs": [
+					"--remote-debugging-port=9222"
+				],
+				"url": "www.msn.com.br",
+				"presentation": {
+					"hidden": true
+				}
+			},
+			{
+				"type": "pwa-msedge",
+				"name": "Launch Microsoft Edge in headless mode",
+				"request": "launch",
+				"runtimeArgs": [
+					"--headless",
+					"--remote-debugging-port=9222"
+				],
+				"url": "www.msn.com.br",
+				"presentation": {
+					"hidden": true
+				}
+			},
+			{
+				"type": "vscode-edge-devtools.debug",
+				"name": "Open Edge DevTools",
+				"request": "attach",
+				"url": "www.msn.com.br",
+				"presentation": {
+					"hidden": true
+				}
+			}
+		],
+		"compounds": [
+			{
+				"name": "Launch Edge Headless and attach DevTools",
+				"configurations": [
+					"Launch Microsoft Edge in headless mode",
+					"Open Edge DevTools"
+				]
+			},
+			{
+				"name": "Launch Edge and attach DevTools",
+				"configurations": [
+					"Launch Microsoft Edge",
+					"Open Edge DevTools"
+				]
+			}
+		]
+	},
+	"settings": {
+		"makefile.makefilePath": "123"
+	}
+}
